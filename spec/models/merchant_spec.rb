@@ -178,7 +178,10 @@ RSpec.describe Merchant, type: :model do
       create(:transaction, invoice_id: invoice_2.id, result: 'failed')
       create(:transaction, invoice_id: invoice_3.id)
 
-      expect(merchant.customers_with_pending_invoices).to eq([customer_2, customer_1])
+      customers_with_pending_invoices = merchant.customers_with_pending_invoices
+
+      expect(customers_with_pending_invoices).to include(customer_1)
+      expect(customers_with_pending_invoices).to include(customer_2)
     end
   end
 end
