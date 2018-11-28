@@ -66,3 +66,15 @@ There are also a number of Business Intelligence endpoints:
 * GET `/api/v1/items/most_items?quantity=x`
 * GET `/api/v1/items/:id/best_day`
 * GET `/api/v1/customers/:id/favorite_merchant`
+
+
+## Contributing
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Create your new feature (make sure to test it and run RSpec)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push up your branch (`git push origin my-new-feature`)
+6. Create a new pull request
+
+Or email the author at colinwarmstrong@gmail.com with any questions, comments, or concerns.
