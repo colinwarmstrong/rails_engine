@@ -7,9 +7,9 @@ class Customer < ApplicationRecord
 
   def favorite_merchant
     merchants.select('merchants.*, COUNT(merchants.id) AS merchant_count')
-      .group(:id)
-      .order('merchant_count DESC')
-      .limit(1)
-      .take
+             .group(:id)
+             .order('merchant_count DESC')
+             .limit(1)
+             .take
   end
 end
